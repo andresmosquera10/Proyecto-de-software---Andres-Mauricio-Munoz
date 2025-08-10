@@ -1,0 +1,122 @@
+/* ===== Reset básico ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== Imagen de fondo ===== */
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-image {
+    background-image: url('Background/restaurar.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== Contenedor del formulario ===== */
+.form-container {
+    background: rgba(255, 255, 255, 0.95);
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Título ===== */
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 0.8rem;
+}
+
+/* ===== Separador ===== */
+.divider {
+    border: none;
+    border-top: 2px solid #767474;
+    margin-bottom: 1rem;
+}
+
+/* ===== Etiquetas y campos ===== */
+label {
+    display: block;
+    font-size: 1.2rem;
+    color: #3e3e3e;
+    margin-bottom: 1.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+/* ===== Botones ===== */
+button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #2141f5;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #0229b5;
+}
+
+button[type="button"] {
+    background-color: #ccc;
+}
+
+button[type="button"]:hover {
+    background-color: #b3b3b3;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 1.5rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+}

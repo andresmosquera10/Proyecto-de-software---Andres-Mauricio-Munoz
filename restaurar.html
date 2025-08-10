@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurar contraseña - En búsqueda de la ambrosía</title>
+    <link rel="stylesheet" href="restaurarstyles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="background-image">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h1 class="title">Restaurar contraseña</h1>
+        <hr class="divider">
+
+        <form onsubmit="return validarCampo()">
+            <label for="contacto">Ingresa el correo electrónico o número de teléfono asociado a la cuenta</label>
+            <input type="text" id="contacto" name="contacto" placeholder="Correo electrónico o número de teléfono" pattern="^(\d{10}|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$" required>
+            <button type="submit">Continuar</button>
+            <button type="button" onclick="window.location.href='index.html'">Volver</button>
+        </form>
+    </div>
+</body>
+
+</html>

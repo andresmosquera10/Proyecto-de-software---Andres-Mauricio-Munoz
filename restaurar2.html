@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurar contraseña - En búsqueda de la ambrosía</title>
+    <link rel="stylesheet" href="restaurarstyles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="background-image">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h1 class="title">Te enviamos un código</h1>
+        <hr class="divider">
+
+        <p>Ingresa el código que enviamos a tu correo electrónico</p>
+        <form onsubmit="return validarCampo()">
+            <label for="codigo">Código de verificación</label>
+            <input type="text" id="codigo" name="codigo" placeholder="Código de verificación" required><br><br>
+            <button type="submit">Continuar</button>
+            <button type="button" onclick="window.location.href='restaurar.html'">Volver</button>
+        </form>
+    </div>
+</body>
+
+</html>
