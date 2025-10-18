@@ -95,13 +95,14 @@ $correo = $_POST["correo"] ?? "";
               <button type="submit">Registrarse</button>
             </div>
             <div class="login-link">
-              <p>¿Ya tienes una cuenta? <a href="index.html">Inicia sesión</a></p>
+              <p>¿Ya tienes una cuenta? <a href="index.php">Inicia sesión</a></p>
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
+  <script src="registro.js"></script>
 
 </body>
 
